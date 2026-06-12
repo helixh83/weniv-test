@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주도 여행 가이드</title>
+
+```
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Malgun Gothic', sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+
+    header {
+        background: linear-gradient(rgba(0,0,0,0.4),
+                    rgba(0,0,0,0.4)),
+                    url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1600');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        background: #0b7285;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 30px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    section {
+        padding: 70px 10%;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #0b7285;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 25px;
+    }
+
+    .card {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .food {
+        background: #f8f9fa;
+    }
+
+    .food-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .food-item {
+        background: white;
+        padding: 15px 25px;
+        border-radius: 30px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        background: #0b7285;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    @media(max-width:768px){
+        .hero h1{
+            font-size:2.5rem;
+        }
+    }
+</style>
+```
+
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <h1>제주도</h1>
+        <p>대한민국 최고의 휴양지, 아름다운 자연과 문화가 공존하는 섬</p>
+    </div>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">소개</a></li>
+        <li><a href="#places">명소</a></li>
+        <li><a href="#food">음식</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>제주도 소개</h2>
+    <p style="text-align:center;">
+        제주도는 한라산을 중심으로 아름다운 해안선과 오름,
+        독특한 문화가 어우러진 대한민국 대표 관광지입니다.
+    </p>
+</section>
+
+<section id="places">
+    <h2>대표 관광지</h2>
+
+```
+<div class="cards">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="한라산">
+        <div class="card-content">
+            <h3>한라산</h3>
+            <p>대한민국 최고봉으로 사계절 아름다운 풍경을 자랑합니다.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="성산일출봉">
+        <div class="card-content">
+            <h3>성산일출봉</h3>
+            <p>유네스코 세계자연유산으로 지정된 제주의 상징입니다.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800" alt="협재해수욕장">
+        <div class="card-content">
+            <h3>협재해수욕장</h3>
+            <p>에메랄드빛 바다가 아름다운 제주 대표 해변입니다.</p>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
+<section id="food" class="food">
+    <h2>제주 대표 음식</h2>
+
+```
+<div class="food-list">
+    <div class="food-item">🐷 흑돼지</div>
+    <div class="food-item">🍊 감귤</div>
+    <div class="food-item">🐟 갈치조림</div>
+    <div class="food-item">🦪 전복죽</div>
+    <div class="food-item">🍜 고기국수</div>
+</div>
+```
+
+</section>
+
+<footer>
+    <p>© 2026 제주도 여행 가이드 | HTML & CSS 실습용</p>
+</footer>
+
+</body>
+</html>
